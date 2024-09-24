@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #E3B7B5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.imagem_cabecalho {
+    align-items:center;
+    justify-content:right;
+    display: flex;
+    gap: 10px; 
+}
+
+.imagem_cabecalho img {
+    width: 30px;
+    height: 30px;
+}
+
+.barra_pesquisa{
+    align-items: center;
+}
+
+.barra_pesquisa input {
+    width: 100%; /* Ajusta a largura do input */
+    max-width: 400px; /* Limita a largura máxima do campo */
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px; /* Bordas arredondadas */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para o placeholder */
+.barra_pesquisa input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Quando o campo de busca está em foco */
+.barra_pesquisa input:focus {
+    border-color: #E3B7B5; /* Altera a cor da borda ao focar */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+.barra_pesquisa img {
+    width: 30px;
+    height: 30px;
+    vertical-align: center;
+}
+
+#navegador{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Centralizando o menu de navegação */
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    margin: 0; /* Remover qualquer margem extra */
+}
+
+.nav-links li {
+    margin: 0; /* Remover qualquer margem extra */
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #E3B7B5;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.banners .banner {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.banners .banner img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.novidades {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.novidades h2 {
+    font-size: 2em;
+    color: #E3B7B5;
+    margin-bottom: 30px;
+}
+
+.novidades .produto {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.novidades .produto img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.novidades .produto p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E3B7B5;
+    color: #fff;
+    font-size: 1em;
+}
