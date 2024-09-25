@@ -2,7 +2,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #E3B7B5;
+    background: #E0ADAC;
     margin: 0;
     padding: 0;
     color: #333;
@@ -16,20 +16,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     
 }
-
-
-.imagem_cabecalho {
-    align-items:center;
-    justify-content:right;
-    display: flex;
-    gap: 10px; 
-}
-
-.imagem_cabecalho img {
-    width: 30px;
-    height: 30px;
-}
-
 .barra_pesquisa{
     align-items: center;
 }
@@ -123,7 +109,6 @@ header p {
 .banners .banner img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .novidades {
