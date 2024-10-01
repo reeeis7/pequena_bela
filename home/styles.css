@@ -149,6 +149,13 @@ header p {
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: block;
+    margin: 20px auto 0 auto; /* Adiciona margem superior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.novidades .produto img:hover {
+    transform: scale(1.05); /* Aumenta 5% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .novidades .produto p {
@@ -167,4 +174,26 @@ footer {
     width:auto;
 	height:3px; 
 	background: #E3B7B5 ;
+}
+.button-container button {
+    background-color: #E3B7B5; 
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container button:hover {
+    background-color: #8d8686; 
+    transform: translateY(-3px);
+}
+
+.button-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
