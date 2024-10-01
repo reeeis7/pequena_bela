@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequena Bela</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div id="navegador">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('login') }}">Entrar</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#carrinho">Carrinho</a></li>
+          <li><a href="#entrega">Entrega</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr class="linha">
+
+    <div class="barra_pesquisa">
+      <div class="pesquisa">
+        <input type="text" placeholder="Buscar">
+        <img src="{{ url_for('static', filename='img/lupa.png') }}" alt="lupa">
+      </div>
+
+      <div class="bolsa">
+        <img src="{{ url_for('static', filename='img/bolsa-de-compras.png') }}" alt="bolsa">
+      </div>
+
+      <div class="menu">
+        <img src="{{ url_for('static', filename='img/menu-aberto.png') }}" alt="menu">
+      </div>
+    </div>
+
+    <div class="boas_vindas">
+      <h1>Bem-vindo à Pequena Bela</h1>
+      <p>Descubra as últimas tendências e promoções exclusivas para você!</p>
+    </div>
+  </header>
+
+  <section class="banners">
+    <div class="banner">
+      <img src="{{ url_for('static', filename='img/Pequena Bela.png') }}" alt="Pequena Bela">
+    </div>
+  </section>
+
+  <section class="novidades">
+    <h2>Novidades da Loja</h2>
+    <div class="produto">
+      <img src="https://1259028l.ha.azioncdn.net/img/2023/09/produto/71683/vestido-rosa-estampado-transpassado-frente.jpg" alt="Vestido">
+      <p>Vestido <b>R$ 389,90</b></p>
+    </div>
+    <div class="produto">
+      <img src="https://1259028l.ha.azioncdn.net/img/2024/04/produto/78253/calca-timotea-detalhe-frente.jpg" alt="Calça Wide Leg Preta">
+      <p>Calça Wide Leg Preta <b>R$ 289,90</b></p>
+    </div>
+    <div class="produto">
+      <img src="https://1259028l.ha.azioncdn.net/img/2024/07/produto/81468/calca-fulvia.jpg" alt="Calça Skinny">
+      <p>Calça Skinny <b>R$ 129,90</b></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Pequena Bela - Moda no tamanho certo para você</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
