@@ -40,13 +40,13 @@ body {
 
 .produto h3 {
     font-size: 18px;
-    margin: 15px 0;
+    margin: 15px;
     color: #333;
 }
 
 .produto p {
     font-size: 16px;
-    margin: 10px 0;
+    margin: 10px;
     color: #555;
 }
 
