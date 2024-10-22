@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cálculo de Frete - Pequena Bela</title>
   <link rel="stylesheet" href="styles.css">
+  icon
 </head>
 
 <body>
@@ -24,17 +25,18 @@
     </div>
     <hr class="linha">
 
-    <div class="barra_pesquisa">
-      <div class="pesquisa">
-        <input type="text" placeholder="Buscar">
-        <img src="/img_global/lupa.png" alt="lupa">
-      </div>
-
-      <div class="bolsa">
-        <img src="/img_global/bolsa-de-compras.png" alt="bolsa">
-      </div>
+    <div class="form-endereco">
+      <h2>Cadastrar Endereço</h2>
+      <form action="/envio-endereco" method="POST">
+        <input type="text" name="rua" placeholder="Rua" required>
+        <input type="text" name="numero" placeholder="Número" required>
+        <input type="text" name="complemento" placeholder="Complemento">
+        <input type="text" name="bairro" placeholder="Bairro" required>
+        <input type="text" name="cidade" placeholder="Cidade" required>
+        <input type="text" name="estado" placeholder="Estado" required>
+      </form>
+      <button type="button" class="botao" id="endereco">Cadastrar</button>
     </div>
-
     <div class="boas_vindas">
       <h1>Cálculo de Frete</h1>
       <p>Informe seu CEP para calcular o frete.</p>
@@ -44,7 +46,7 @@
   <section class="calculo-frete">
     <form id="form-frete">
       <label for="cep">Digite seu CEP:</label>
-      <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX">
+      <input type="text" id="cep" name="cep" placeholder="Digite aqui seu cep">
       <button type="button" onclick="calcularFrete()">Calcular Frete</button>
     </form>
 
@@ -55,7 +57,7 @@
     <p>Pequena Bela - Moda no tamanho certo para você</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
