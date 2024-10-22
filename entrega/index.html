@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de Frete - Pequena Bela</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div id="navegador">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/login/index.html">Entrar</a></li>
+          <li><a href="/home/index.html">Home</a></li>
+          <li><a href="/produtos/catalogo.html">Produtos</a></li>
+          <li><a href="#carrinho">Carrinho</a></li>
+          <li><a href="#entrega">Entrega</a></li>
+          <li><a href="/contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr class="linha">
+
+    <div class="barra_pesquisa">
+      <div class="pesquisa">
+        <input type="text" placeholder="Buscar">
+        <img src="/img_global/lupa.png" alt="lupa">
+      </div>
+
+      <div class="bolsa">
+        <img src="/img_global/bolsa-de-compras.png" alt="bolsa">
+      </div>
+    </div>
+
+    <div class="boas_vindas">
+      <h1>Cálculo de Frete</h1>
+      <p>Informe seu CEP para calcular o frete.</p>
+    </div>
+  </header>
+
+  <section class="calculo-frete">
+    <form id="form-frete">
+      <label for="cep">Digite seu CEP:</label>
+      <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX">
+      <button type="button" onclick="calcularFrete()">Calcular Frete</button>
+    </form>
+
+    <div id="resultado-frete"></div>
+  </section>
+
+  <footer>
+    <p>Pequena Bela - Moda no tamanho certo para você</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

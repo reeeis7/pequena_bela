@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #E0ADAC;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navegador {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.barra_pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.barra_pesquisa input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.barra_pesquisa input:focus {
+    border-color: #E3B7B5;
+    outline: none;
+}
+
+.barra_pesquisa img {
+    width: 30px;
+    height: 30px;
+}
+
+.bolsa {
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #E3B7B5;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.linha {
+    width: auto;
+    height: 3px;
+    background: #E3B7B5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E3B7B5;
+    color: #fff;
+    font-size: 1em;
+}
+
+.calculo-frete {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.calculo-frete form {
+    margin-bottom: 20px;
+}
+
+.calculo-frete input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.calculo-frete button {
+    background-color: #E3B7B5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.calculo-frete button:hover {
+    background-color: #8d8686;
+}
